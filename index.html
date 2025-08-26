@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Student Ambassador - Shruthi M G</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Reset & base */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #ffe0b2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  /* Poster container */
+  .poster {
+    background: #ffffffcc; /* Slight transparency */
+    padding: 50px 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    max-width: 700px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Header styling */
+  h1 {
+    font-size: 2.5rem;
+    color: #1a237e;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+  }
+
+  h1::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: #3949ab;
+    margin: 8px auto 0;
+    border-radius: 2px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: #283593;
+    margin-bottom: 35px;
+  }
+
+  /* Bullet list */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  li {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    padding-left: 15px;
+    position: relative;
+    cursor: default;
+    transition: transform 0.3s, color 0.3s;
+  }
+
+  li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #3949ab;
+    font-size: 1.5rem;
+    top: 0;
+  }
+
+  li:hover {
+    transform: translateX(10px);
+    color: #1a237e;
+  }
+
+  /* Footer styling */
+  footer {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #1565c0;
+  }
+
+  /* Story button */
+  .story-btn {
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: #1e88e5;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+  }
+
+  .story-btn:hover {
+    transform: scale(1.05);
+    background: #1565c0;
+  }
+
+  /* Story text */
+  .story {
+    display: none;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #212121;
+    text-align: left;
+    line-height: 1.6rem;
+    animation: fadeInStory 0.5s ease forwards;
+  }
+
+  @keyframes fadeInStory {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Subtle background shapes */
+  .poster::before, .poster::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  .poster::before {
+    width: 200px; height: 200px;
+    background: #3949ab;
+    top: -50px;
+    left: -50px;
+  }
+
+  .poster::after {
+    width: 150px; height: 150px;
+    background: #1e88e5;
+    bottom: -50px;
+    right: -50px;
+  }
+</style>
+</head>
+<body>
+
+<div class="poster">
+  <h1>Google Student Ambassador</h1>
+  <h2>Shruthi M G — Campus Connector</h2>
+
+  <ul>
+    <li>Continuous Learner: Exploring Python, Java, Web Development, and new tech every day</li>
+    <li>Community Builder: Helping peers understand concepts and grow together</li>
+    <li>Creative Thinker: Building projects and solving real-world problems</li>
+    <li>Growth Mindset: Always learning, creating, and inspiring others</li>
+  </ul>
+
+  <footer>Let’s connect the campus with opportunities!</footer>
+
+  <button class="story-btn" onclick="showStory()">Read My Story</button>
+  <p class="story" id="story">
+    Hi! I’m Shruthi M G, and I believe learning is best when it’s shared. Every day, I explore new tech skills and help my peers understand them, making knowledge accessible for everyone. As a Google Student Ambassador, I will connect students with opportunities, inspire them to grow, and create a campus community where knowledge and innovation thrive. Let’s make our campus smarter, together!
+  </p>
+</div>
+
+<script>
+function showStory() {
+  const story = document.getElementById('story');
+  story.style.display = story.style.display === 'block' ? 'none' : 'block';
+}
+</script>
+
+</body>
+</html>

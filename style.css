@@ -1,0 +1,49 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f2f2f2, #cce7ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.poster {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  max-width: 600px;
+  text-align: center;
+}
+
+.poster h1 {
+  color: #4285F4; /* Google Blue */
+}
+
+.poster h2 {
+  color: #34A853; /* Google Green */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  margin: 15px 0;
+  font-size: 18px;
+  transition: transform 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+li:hover {
+  transform: scale(1.05);
+  color: #FBBC05; /* Google Yellow */
+}
+
+footer {
+  margin-top: 25px;
+  font-weight: bold;
+  color: #EA4335; /* Google Red */
+}
