@@ -14,8 +14,11 @@ It features:
   ~ This web poster demonstrates technical skills, creativity, and communication ability while presenting a professional, unique approach to a student ambassador          application.
 
 Technologies Used:
+
 1.HTML5
+
 2.CSS3 (Flexbox, Animations, Transitions)
+
 3.JavaScript (for interactive story toggle)
 
 Live:
