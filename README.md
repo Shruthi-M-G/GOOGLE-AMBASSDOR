@@ -21,4 +21,4 @@ Technologies Used:
 
 3.JavaScript (for interactive story toggle)
 
-Live:
+Live:https://shruthi-m-g.github.io/GOOGLE-AMBASSDOR/
